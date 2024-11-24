@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Preview Page</title>
+</head>
+<style>
+    #main-product-image{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        margin: 20px auto;
+        display: block;
+    }
+    .product-image{
+        height: 70px;
+        width: 70px;
+        object-fit: cover;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .product-images-container{
+        display: flex;
+        justify-content: center;
+    }
+    .h1{
+        font-size: 22px;
+        font-weight: bold;
+        margin: 10px;
+        text-align: center;
+    }
+    .container{
+        height: 560px;
+        width: 540px;
+        padding: 12px;
+        margin: 30px 440px;
+        border: 0.5px solid gray;
+        border-radius: 15px;
+        box-shadow: 1px 1px 15px 2px #b7b7b8;
+        cursor: pointer;
+        background-color: #fff;
+        display: inline-block;
+        
+    }
+</style>
+<body>
+    <h2 style="text-align: center; font-size: 40px;">Product Preview Design</h2>
+ <div class="container">
+    <img src="../images/dog5.png" id="main-product-image"/>
+    <div class="product-images-container">
+        <img src="../images/dog5.png" class="product-image" onclick="changeImage('../images/dog5.png')"/>
+        <img src="../images/dog.jpg" class="product-image"onclick="changeImage('../images/dog.jpg')"/>
+        <img src="../images/dog1.jpg" class="product-image" onclick="changeImage('../images/dog1.jpg')"/>
+        <img src="../images/dog2.jpg." class="product-image" onclick="changeImage('../images/dog2.jpg')"/>
+        <img src="../images/dog3.jpg." class="product-image" onclick="changeImage('../images/dog3.jpg')"/>
+        <img src="../images/dog4.png" class="product-image" onclick="changeImage('../images/dog4.png')"/>
+   
+    </div>
+    <h1 class="h2" >Nantan Cool Dog Showpiece with Tray</h1>
+</div>
+    <script>
+        function changeImage(imageName){
+        const mainimage = document.getElementById('main-product-image')
+         mainimage.src=imageName;
+      
+        }
+    </script>
+    
+</body>
+</html>
